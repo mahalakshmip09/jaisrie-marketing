@@ -3,316 +3,483 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jaisrie Marketing | Solar Energy Solutions</title>
-  <meta name="description" content="Trusted solar & water purification solutions provider in Sivakasi, Tamil Nadu. Residential, commercial & industrial solar installations." />
+  <title>Jaisrie Marketing | Solar & Water Purifier Solutions</title>
+  <meta name="description" content="All Type of Water Purifiers & Solar Systems. Trusted provider in Sivakasi, Tamil Nadu. Call 96294 55664." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ── NAVBAR ── -->
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
   <header class="navbar" id="navbar">
     <div class="nav-inner container">
-      <a href="#home" class="brand">
-        <span class="brand-icon">☀</span>
-        <span class="brand-text">Jaisrie<span class="accent">.</span></span>
+
+      <!-- LOGO -->
+      <a href="#home" class="nav-logo">
+        <img src="kani_png.PNG" alt="Jaisrie Marketing Logo" class="logo-img" />
       </a>
+
+      <!-- LINKS -->
       <nav class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact" class="nav-cta">Get Quote</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="nav-cta">Free Quote</a>
       </nav>
+
       <button class="hamburger" id="hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ── HERO ── -->
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="sun-ring ring-1"></div>
-      <div class="sun-ring ring-2"></div>
-      <div class="sun-ring ring-3"></div>
-      <div class="sun-core"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- floating icons matching logo -->
+    <div class="hero-floats" aria-hidden="true">
+      <div class="float-icon float-leaf">🌿</div>
+      <div class="float-icon float-drop">💧</div>
+      <div class="float-icon float-sun">☀</div>
     </div>
+
     <div class="hero-content container">
-      <span class="hero-badge">Tamil Nadu's Trusted Solar Partner</span>
-      <h1 class="hero-title">Power Your Future<br/><em>With Solar Energy</em></h1>
-      <p class="hero-sub">Affordable installation solutions for homes, businesses & industries across South Tamil Nadu. Cut your EB bill — harness the sun.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Get Free Quote</a>
-        <a href="#services" class="btn btn-ghost">Explore Services ↓</a>
+      <div class="hero-logo-wrap">
+        <img src="kani_png.PNG" alt="Jaisrie Marketing" class="hero-logo" />
       </div>
+      <p class="hero-tagline">All Type of Water Purifiers &amp; Solar Systems</p>
+      <h1 class="hero-title">Power Your Home.<br/><span class="title-blue">Purify Your Water.</span><br/><span class="title-orange">Save Every Rupee.</span></h1>
+      <p class="hero-sub">Trusted solar &amp; water purification solutions for homes, businesses &amp; industries across South Tamil Nadu — since 2014.</p>
+      <div class="hero-actions">
+        <a href="tel:9629455664" class="btn btn-red">
+          <span class="btn-icon">📞</span> Call Now: 96294 55664
+        </a>
+        <a href="#contact" class="btn btn-outline">Get Free Quote</a>
+      </div>
+
+      <!-- STATS -->
       <div class="hero-stats">
-        <div class="stat"><span class="stat-num" data-target="500">0</span><span>+</span><div class="stat-label">Installations</div></div>
-        <div class="stat"><span class="stat-num" data-target="10">0</span><span>+</span><div class="stat-label">Years Experience</div></div>
-        <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><div class="stat-label">Satisfaction</div></div>
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span class="stat-suf">+</span>
+          <div class="stat-label">Installations</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="10">0</span><span class="stat-suf">+</span>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-suf">%</span>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
       </div>
     </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-bar"></div>
     </div>
   </section>
 
-  <!-- ── ABOUT ── -->
+  <!-- ═══════════════════════════════════════
+       MARQUEE TRUST BAR
+  ═══════════════════════════════════════ -->
+  <div class="trust-bar">
+    <div class="trust-track">
+      <span>✦ Certified Installers</span>
+      <span>✦ 5-Year Warranty</span>
+      <span>✦ Free Site Survey</span>
+      <span>✦ EMI Available</span>
+      <span>✦ Govt. Subsidy Assistance</span>
+      <span>✦ 24/7 After-Sales Support</span>
+      <span>✦ South Tamil Nadu's #1 Choice</span>
+      <span>✦ Certified Installers</span>
+      <span>✦ 5-Year Warranty</span>
+      <span>✦ Free Site Survey</span>
+      <span>✦ EMI Available</span>
+      <span>✦ Govt. Subsidy Assistance</span>
+      <span>✦ 24/7 After-Sales Support</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
   <section class="about section" id="about">
     <div class="container about-grid">
-      <div class="about-visual">
-        <div class="about-card card-glow">
-          <div class="about-icon-wrap">
-            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
-              <circle cx="32" cy="32" r="14" fill="var(--accent)" opacity=".9"/>
-              <line x1="32" y1="4" x2="32" y2="14" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="32" y1="50" x2="32" y2="60" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="4" y1="32" x2="14" y2="32" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="50" y1="32" x2="60" y2="32" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="12.7" y1="12.7" x2="19.8" y2="19.8" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="44.2" y1="44.2" x2="51.3" y2="51.3" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="51.3" y1="12.7" x2="44.2" y2="19.8" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-              <line x1="19.8" y1="44.2" x2="12.7" y2="51.3" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <p class="about-tagline">Illuminating Tamil Nadu<br/>since 2014</p>
+
+      <div class="about-visual fade-in">
+        <div class="about-logo-card">
+          <img src="kani_png.PNG" alt="Jaisrie Marketing" />
+          <div class="about-logo-label">Sivakasi, Tamil Nadu</div>
         </div>
-        <div class="about-badge-float">Based in Sivakasi, TN</div>
+        <div class="about-badge about-badge-1">
+          <span class="badge-num">500+</span>
+          <span class="badge-txt">Happy Customers</span>
+        </div>
+        <div class="about-badge about-badge-2">
+          <span class="badge-num">10+</span>
+          <span class="badge-txt">Years of Trust</span>
+        </div>
       </div>
-      <div class="about-text">
-        <span class="section-label">Who We Are</span>
+
+      <div class="about-text fade-in">
+        <span class="section-chip chip-blue">Who We Are</span>
         <h2 class="section-title">Jaisrie Marketing</h2>
-        <p>We are a trusted solar and water purification solutions provider based in Sivakasi, Tamil Nadu. We specialize in designing and installing reliable solar power systems for residential, commercial, and industrial customers across South Tamil Nadu.</p>
+        <div class="title-rule"></div>
+        <p>We are a trusted solar and water purification solutions provider based in <strong>Sivakasi, Tamil Nadu</strong>. We specialize in designing and installing reliable solar power systems for residential, commercial, and industrial customers across South Tamil Nadu.</p>
         <p>Our mission is to provide clean, renewable energy solutions that help customers reduce electricity bills and move towards a sustainable future.</p>
-        <div class="about-features">
-          <div class="feature-pill">✓ Certified Installers</div>
-          <div class="feature-pill">✓ 5-Year Warranty</div>
-          <div class="feature-pill">✓ Free Consultation</div>
-          <div class="feature-pill">✓ EMI Available</div>
+
+        <div class="about-pills">
+          <span class="pill pill-green">🌿 Eco-Friendly</span>
+          <span class="pill pill-blue">💧 Clean Water</span>
+          <span class="pill pill-orange">☀ Solar Power</span>
+          <span class="pill pill-red">✓ Certified</span>
         </div>
-        <a href="#contact" class="btn btn-primary">Talk to an Expert</a>
+
+        <a href="#contact" class="btn btn-red">Talk to an Expert →</a>
       </div>
     </div>
   </section>
 
-  <!-- ── SERVICES ── -->
+  <!-- ═══════════════════════════════════════
+       SERVICES
+  ═══════════════════════════════════════ -->
   <section class="services section" id="services">
     <div class="container">
-      <div class="section-head">
-        <span class="section-label">What We Do</span>
-        <h2 class="section-title">Our Solar Services</h2>
-        <p class="section-desc">From rooftop homes to industrial parks — we design, install and maintain solar systems of every scale.</p>
+      <div class="section-head fade-in">
+        <span class="section-chip chip-orange">What We Offer</span>
+        <h2 class="section-title">Our Services</h2>
+        <div class="title-rule center"></div>
+        <p class="section-desc">Comprehensive solar &amp; water solutions for every need — homes, offices and factories.</p>
       </div>
+
       <div class="services-grid">
-        <div class="service-card" data-index="01">
-          <div class="service-icon">🏠</div>
+
+        <div class="service-card sc-solar fade-in">
+          <div class="sc-icon-wrap sc-orange">
+            <span class="sc-icon">🏠</span>
+          </div>
+          <div class="sc-num">01</div>
           <h3>Residential Solar</h3>
-          <p>Reduce your home electricity bill with efficient rooftop solar installations tailored for Tamil Nadu's climate.</p>
-          <span class="service-link">Learn More →</span>
+          <p>Rooftop solar panels designed to slash your home's EB bill. Customised for Tamil Nadu's sunlight.</p>
+          <a href="#contact" class="sc-link">Get Quote →</a>
         </div>
-        <div class="service-card" data-index="02">
-          <div class="service-icon">🏢</div>
+
+        <div class="service-card sc-commercial fade-in">
+          <div class="sc-icon-wrap sc-blue">
+            <span class="sc-icon">🏢</span>
+          </div>
+          <div class="sc-num">02</div>
           <h3>Commercial Solar</h3>
-          <p>Solar solutions designed to lower energy costs for offices, shops, and businesses of all sizes.</p>
-          <span class="service-link">Learn More →</span>
+          <p>Energy-efficient solar solutions for offices, showrooms &amp; commercial buildings.</p>
+          <a href="#contact" class="sc-link">Get Quote →</a>
         </div>
-        <div class="service-card" data-index="03">
-          <div class="service-icon">🏭</div>
+
+        <div class="service-card sc-industrial fade-in">
+          <div class="sc-icon-wrap sc-red">
+            <span class="sc-icon">🏭</span>
+          </div>
+          <div class="sc-num">03</div>
           <h3>Industrial Solar</h3>
-          <p>Large-scale solar systems for factories and industrial power requirements with maximum ROI.</p>
-          <span class="service-link">Learn More →</span>
+          <p>High-capacity solar plants for factories &amp; industrial units with maximum ROI.</p>
+          <a href="#contact" class="sc-link">Get Quote →</a>
         </div>
-        <div class="service-card" data-index="04">
-          <div class="service-icon">💧</div>
-          <h3>Water Purification</h3>
-          <p>Solar-powered water purification systems for clean, safe drinking water — even in remote areas.</p>
-          <span class="service-link">Learn More →</span>
+
+        <div class="service-card sc-water fade-in">
+          <div class="sc-icon-wrap sc-green">
+            <span class="sc-icon">💧</span>
+          </div>
+          <div class="sc-num">04</div>
+          <h3>Water Purifiers</h3>
+          <p>All types of water purifiers — RO, UV, alkaline — for homes, offices &amp; institutions.</p>
+          <a href="#contact" class="sc-link">Get Quote →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       WHY CHOOSE US (CTA BAND)
+  ═══════════════════════════════════════ -->
+  <section class="why-band">
+    <div class="container why-inner">
+      <div class="why-text fade-in">
+        <span class="section-chip chip-white">Why Choose Us</span>
+        <h2 class="why-title">South Tamil Nadu's Most Trusted Solar &amp; Water Partner</h2>
+      </div>
+      <div class="why-features fade-in">
+        <div class="why-feat">
+          <span class="wf-icon wf-orange">☀</span>
+          <div><strong>Free Site Survey</strong><p>We visit your site and design the best system for you at no cost.</p></div>
+        </div>
+        <div class="why-feat">
+          <span class="wf-icon wf-blue">💧</span>
+          <div><strong>Govt. Subsidy Help</strong><p>We assist with all paperwork to claim Tamil Nadu solar subsidies.</p></div>
+        </div>
+        <div class="why-feat">
+          <span class="wf-icon wf-green">🌿</span>
+          <div><strong>5-Year Warranty</strong><p>Full warranty on panels, inverters &amp; purifiers with AMC options.</p></div>
+        </div>
+        <div class="why-feat">
+          <span class="wf-icon wf-red">✓</span>
+          <div><strong>EMI Available</strong><p>Affordable monthly installments with zero down payment schemes.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── PROJECTS ── -->
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════ -->
   <section class="projects section" id="projects">
     <div class="container">
-      <div class="section-head">
-        <span class="section-label">Our Work</span>
+      <div class="section-head fade-in">
+        <span class="section-chip chip-red">Our Work</span>
         <h2 class="section-title">Completed Projects</h2>
+        <div class="title-rule center"></div>
       </div>
       <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-thumb residential">
-            <span class="project-emoji">🏡</span>
+
+        <div class="project-card fade-in">
+          <div class="project-visual pv-home">
+            <span class="pv-emoji">🏡</span>
+            <span class="pv-tag tag-orange">Residential</span>
           </div>
-          <div class="project-info">
-            <span class="project-tag">Residential</span>
-            <h4>Solar Rooftop – Home Installation</h4>
-            <p>3kW rooftop system installed in Sivakasi, reducing monthly EB bill by ₹3,500.</p>
+          <div class="project-body">
+            <h4>Solar Rooftop – Home</h4>
+            <p>3kW rooftop system in Sivakasi. Monthly EB bill reduced by ₹3,500.</p>
+            <div class="project-stat">
+              <span class="ps-item"><strong>3 kW</strong> Capacity</span>
+              <span class="ps-item"><strong>₹3,500</strong> Monthly Savings</span>
+            </div>
           </div>
         </div>
-        <div class="project-card featured">
-          <div class="project-thumb commercial">
-            <span class="project-emoji">🏗️</span>
+
+        <div class="project-card project-featured fade-in">
+          <div class="project-visual pv-commercial">
+            <span class="pv-emoji">🏗️</span>
+            <span class="pv-tag tag-blue">Commercial</span>
           </div>
-          <div class="project-info">
-            <span class="project-tag">Commercial</span>
+          <div class="project-body">
             <h4>Commercial Solar Plant</h4>
-            <p>25kW rooftop plant for a textile unit in Virudhunagar delivering 100+ units/day.</p>
+            <p>25kW plant for a textile unit in Virudhunagar — 100+ units daily.</p>
+            <div class="project-stat">
+              <span class="ps-item"><strong>25 kW</strong> Capacity</span>
+              <span class="ps-item"><strong>100+</strong> Units/Day</span>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-thumb industrial">
-            <span class="project-emoji">⚡</span>
+
+        <div class="project-card fade-in">
+          <div class="project-visual pv-industrial">
+            <span class="pv-emoji">⚡</span>
+            <span class="pv-tag tag-red">Industrial</span>
           </div>
-          <div class="project-info">
-            <span class="project-tag">Industrial</span>
+          <div class="project-body">
             <h4>Industrial Solar System</h4>
-            <p>100kW ground-mounted plant for a match factory — zero grid dependency during daylight.</p>
+            <p>100kW ground-mounted plant for a match factory — zero grid dependency.</p>
+            <div class="project-stat">
+              <span class="ps-item"><strong>100 kW</strong> Capacity</span>
+              <span class="ps-item"><strong>Zero</strong> Grid Cost</span>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ── TESTIMONIALS ── -->
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════ -->
   <section class="testimonials section" id="testimonials">
     <div class="container">
-      <div class="section-head">
-        <span class="section-label">Happy Customers</span>
+      <div class="section-head fade-in">
+        <span class="section-chip chip-green">Happy Customers</span>
         <h2 class="section-title">What People Say</h2>
+        <div class="title-rule center"></div>
       </div>
-      <div class="testimonials-track" id="testimonialsTrack">
-        <div class="testi-card">
+
+      <div class="testi-grid">
+        <div class="testi-card fade-in">
+          <div class="testi-quote">"</div>
+          <p>Excellent solar installation service. Our EB bill reduced drastically! The team was professional and completed the work on time.</p>
           <div class="testi-stars">★★★★★</div>
-          <p>"Excellent solar installation service. Our EB bill reduced drastically! The team was professional and completed the work on time."</p>
           <div class="testi-author">
-            <div class="testi-avatar">RK</div>
+            <div class="testi-av av-orange">RK</div>
             <div><strong>Ravi Kumar</strong><span>Sivakasi</span></div>
           </div>
         </div>
-        <div class="testi-card">
+
+        <div class="testi-card tc-featured fade-in">
+          <div class="testi-quote">"</div>
+          <p>Professional team and quick installation. Highly recommended. After-sales support is also very good. Very satisfied with the quality.</p>
           <div class="testi-stars">★★★★★</div>
-          <p>"Professional team and quick installation. Highly recommended. After-sales support is also very good."</p>
           <div class="testi-author">
-            <div class="testi-avatar">SR</div>
+            <div class="testi-av av-blue">SR</div>
             <div><strong>Saravanan</strong><span>Virudhunagar</span></div>
           </div>
         </div>
-        <div class="testi-card">
+
+        <div class="testi-card fade-in">
+          <div class="testi-quote">"</div>
+          <p>Good support and affordable pricing. The solar panels have been working perfectly for 2 years without any issues.</p>
           <div class="testi-stars">★★★★☆</div>
-          <p>"Good support and affordable pricing. The solar panels have been working perfectly for 2 years without any issues."</p>
           <div class="testi-author">
-            <div class="testi-avatar">KA</div>
+            <div class="testi-av av-green">KA</div>
             <div><strong>Karthik</strong><span>Madurai</span></div>
           </div>
         </div>
       </div>
-      <div class="testi-nav">
-        <button class="testi-btn" id="testiPrev">←</button>
-        <button class="testi-btn" id="testiNext">→</button>
-      </div>
     </div>
   </section>
 
-  <!-- ── CONTACT ── -->
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
   <section class="contact section" id="contact">
     <div class="container contact-grid">
-      <div class="contact-info">
-        <span class="section-label">Reach Us</span>
-        <h2 class="section-title">Let's Talk Solar</h2>
-        <p>Get a free consultation and custom quote for your property. Our experts will assess your needs and recommend the best system.</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <span class="contact-icon">📞</span>
+
+      <div class="contact-info fade-in">
+        <span class="section-chip chip-orange">Reach Us</span>
+        <h2 class="section-title">Let's Talk Solar &amp; Water</h2>
+        <div class="title-rule"></div>
+        <p>Get a free consultation and custom quote for your property. Our experts will assess your needs and suggest the best solution.</p>
+
+        <div class="contact-cards">
+          <a href="tel:9629455664" class="cc-item cc-red">
+            <span class="cc-icon">📞</span>
             <div>
-              <strong>Call Us</strong>
-              <a href="tel:9629455664">+91 96294 55664</a>
-              <a href="tel:9585755665">+91 95857 55665</a>
+              <strong>Call / WhatsApp</strong>
+              <span>+91 96294 55664</span>
+              <span>+91 95857 55665</span>
             </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">✉️</span>
+          </a>
+          <a href="mailto:jaisriemarketing@gmail.com" class="cc-item cc-blue">
+            <span class="cc-icon">✉️</span>
             <div>
               <strong>Email Us</strong>
-              <a href="mailto:jaisriemarketing@gmail.com">jaisriemarketing@gmail.com</a>
+              <span>jaisriemarketing@gmail.com</span>
             </div>
-          </div>
-          <div class="contact-item">
-            <span class="contact-icon">📍</span>
+          </a>
+          <div class="cc-item cc-green">
+            <span class="cc-icon">📍</span>
             <div>
               <strong>Visit Us</strong>
               <span>Sivakasi, Tamil Nadu</span>
             </div>
           </div>
         </div>
+
+        <div class="contact-logo-mini">
+          <img src="kani_png.PNG" alt="Jaisrie Marketing" />
+        </div>
       </div>
-      <form class="contact-form" id="contactForm" novalidate>
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="Ravi Kumar" required />
-          <span class="form-error" id="nameError"></span>
+
+      <!-- FORM -->
+      <form class="contact-form fade-in" id="contactForm" novalidate>
+        <h3 class="form-title">Send Us a Message</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" placeholder="Ravi Kumar" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile Number <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="96294 55664" required />
+            <span class="form-error" id="phoneError"></span>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
-          <span class="form-error" id="phoneError"></span>
-        </div>
+
         <div class="form-group">
           <label for="email">Email Address</label>
           <input type="email" id="email" name="email" placeholder="you@example.com" />
         </div>
+
         <div class="form-group">
           <label for="service">Service Required</label>
           <select id="service" name="service">
-            <option value="">Select a service</option>
+            <option value="">— Select a service —</option>
             <option>Residential Solar</option>
             <option>Commercial Solar</option>
             <option>Industrial Solar</option>
-            <option>Water Purification</option>
+            <option>Water Purifier</option>
+            <option>AMC / Service</option>
           </select>
         </div>
+
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message">Your Message</label>
           <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirement…"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-          <span class="btn-text">Send Message</span>
-          <span class="btn-loading hidden">Sending…</span>
+
+        <button type="submit" class="btn btn-red btn-full" id="submitBtn">
+          <span id="btnText">Send Message ✦</span>
+          <span id="btnLoad" class="hidden">Sending…</span>
         </button>
+
         <div class="form-success hidden" id="formSuccess">
-          ✅ Thank you! We'll get back to you within 24 hours.
+          ✅ Thank you! We'll call you within 24 hours.
         </div>
       </form>
+
     </div>
   </section>
 
-  <!-- ── FOOTER ── -->
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
   <footer class="footer">
-    <div class="container footer-inner">
+    <div class="container footer-grid">
+
       <div class="footer-brand">
-        <span class="brand-icon">☀</span>
-        <span class="brand-text">Jaisrie<span class="accent">.</span></span>
-        <p>Solar & Water Purifier Solutions<br/>Sivakasi, Tamil Nadu</p>
+        <img src="kani_png.PNG" alt="Jaisrie Marketing" class="footer-logo" />
+        <p>All Type of Water Purifiers &amp; Solar Systems<br/>Sivakasi, Tamil Nadu — Since 2014</p>
+        <div class="footer-contact-quick">
+          <a href="tel:9629455664">📞 96294 55664</a>
+          <a href="tel:9585755665">📞 95857 55665</a>
+        </div>
       </div>
+
       <div class="footer-links">
         <h5>Quick Links</h5>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
         <a href="#projects">Projects</a>
+        <a href="#testimonials">Reviews</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="footer-contact">
-        <h5>Contact</h5>
-        <a href="tel:9629455664">+91 96294 55664</a>
-        <a href="tel:9585755665">+91 95857 55665</a>
-        <a href="mailto:jaisriemarketing@gmail.com">jaisriemarketing@gmail.com</a>
+
+      <div class="footer-services">
+        <h5>Services</h5>
+        <a href="#services">Residential Solar</a>
+        <a href="#services">Commercial Solar</a>
+        <a href="#services">Industrial Solar</a>
+        <a href="#services">Water Purifiers</a>
+        <a href="#services">AMC &amp; Service</a>
       </div>
+
     </div>
+
     <div class="footer-bottom">
-      <p>© 2026 Jaisrie Marketing. All Rights Reserved. | Made with ☀️ in Tamil Nadu</p>
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>Jaisrie Marketing</strong>. All Rights Reserved. | Sivakasi, Tamil Nadu</p>
+        <p>Made with ☀️ &amp; 💧 in Tamil Nadu</p>
+      </div>
     </div>
   </footer>
 
