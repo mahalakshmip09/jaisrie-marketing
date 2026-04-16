@@ -2,6 +2,7 @@
 //  script.js — Jaisrie Marketing
 // ══════════════════════════════════════════
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── 1. NAVBAR SCROLL EFFECT ──
@@ -154,6 +155,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Scroll to success message
       formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
+const res = await fetch('https://formspree.io/f/xdayenwq', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(data),
+});
+      
       /*
       // REAL SUBMISSION — uncomment when server is ready:
       try {
