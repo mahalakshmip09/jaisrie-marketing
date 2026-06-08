@@ -83,6 +83,84 @@ input, select, textarea { font-family: var(--font-body); }
 .section-head { text-align: center; margin-bottom: 60px; }
 .section-head .section-desc { margin: 12px auto 0; }
 
+//SLIDER IMAGE
+
+.slider-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    aspect-ratio: 16/7;
+    background: #111;
+  }
+
+  /* All 3 slides sit side by side in a row */
+  .slides {
+    display: flex;
+    width: 300%;           /* 3 slides × 100% */
+    height: 100%;
+    transition: transform 0.6s ease;
+  }
+
+  .slide {
+    width: calc(100% / 3); /* each slide = 1/3 of 300% = 100vw */
+    height: 100%;
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .slide img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+
+  /* Dark overlay so text is readable */
+  .slide-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+  }
+
+  .slide-label {
+    position: absolute;
+    bottom: 1.2rem; left: 1.4rem;
+    color: #fff; font-size: 15px; font-weight: 500;
+  }
+
+  /* 3 DOTS */
+  .dots {
+    position: absolute;
+    bottom: 1rem; left: 50%;
+    transform: translateX(-50%);
+    display: flex; gap: 8px;
+  }
+
+  .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.8);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.25s;
+  }
+
+  .dot.on { background: #fff; }
+
+  /* ARROWS */
+  .arr {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    background: rgba(255,255,255,0.2);
+    border: none; color: #fff;
+    width: 38px; height: 38px;
+    border-radius: 50%; font-size: 18px;
+    cursor: pointer; display: flex;
+    align-items: center; justify-content: center;
+  }
+  .arr.l { left: 14px; }
+  .arr.r { right: 14px; }
+
+// SLIDER IMAGE END
+
 /* ── SECTION CHIPS ── */
 .section-chip {
   display: inline-block;
