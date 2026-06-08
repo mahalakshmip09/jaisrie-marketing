@@ -2,6 +2,29 @@
 //  script.js — Jaisrie Marketing
 // ══════════════════════════════════════════
 
+//SLIDER IMAGE
+  let cur = 0;
+  const sl    = document.getElementById('sl');
+  const dots  = document.querySelectorAll('.dot');
+
+  function go(n) {
+    cur = (n + 3) % 3;                              // wrap around 0-1-2
+    sl.style.transform = `translateX(-${cur * 100 / 3}%)`; // slide left
+    dots.forEach((d, i) => d.classList.toggle('on', i === cur)); // update dots
+  }
+
+  // Arrow buttons
+  document.getElementById('prev').onclick = () => go(cur - 1);
+  document.getElementById('next').onclick = () => go(cur + 1);
+
+  // Dot click → go to that slide
+  dots.forEach(d => d.onclick = () => go(+d.dataset.i));
+
+  // Auto-play every 4 seconds
+  setInterval(() => go(cur + 1), 4000);
+// SLIDER IMAGE END FUNCTION
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
