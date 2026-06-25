@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 
 /* ── DATA ── */
 const SERVICES = [
-  { idx: '01', icon: '', title: 'Residential Solar',   desc: 'Reduce your home electricity bill with efficient rooftop solar installations tailored for Tamil Nadu\'s climate.' },
+  { idx: '01', icon: '🏡', title: 'Residential Solar',   desc: 'Reduce your home electricity bill with efficient rooftop solar installations tailored for Tamil Nadu\'s climate.' },
   { idx: '02', icon: '🏢', title: 'Commercial Solar',    desc: 'Solar solutions designed to lower energy costs for offices, shops, and businesses of all sizes.' },
   { idx: '03', icon: '🏭', title: 'Industrial Solar',    desc: 'Large-scale solar systems for factories and industrial power requirements with maximum ROI.' },
   { idx: '04', icon: '💧', title: 'Water Purification',  desc: 'Solar-powered water purification systems for clean, safe drinking water — even in remote areas.' },
