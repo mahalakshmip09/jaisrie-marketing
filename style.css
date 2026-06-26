@@ -649,7 +649,7 @@ input, select, textarea { font-family: var(--font-body); }
 
 /* ── FOOTER ── */
 .footer {
-  background: #228B22;
+  background: #276221;
   border-top: 4px solid;
   border-image: linear-gradient(90deg, var(--red), var(--orange), var(--blue), var(--green)) 1;
 }
